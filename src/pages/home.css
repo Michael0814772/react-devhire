@@ -1,0 +1,144 @@
+.parent-tab {
+  display: flex;
+  height: 100vh;
+}
+
+.tab-one {
+  width: 15%;
+  border-right: 1px solid var(--light-black);
+  padding: 15px 0;
+}
+
+.tab-one .logo h1 {
+  font-size: 32px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.tab-one .logo span {
+  color: var(--hover-color);
+}
+
+.tab-one .nav-content {
+  padding-top: 10px;
+}
+
+.tab-one .nav-content p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1px;
+  border-left: 5px solid rgba(0, 0, 0, 0);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* padding-left: 58px; */
+}
+
+.tab-one .nav-content p a {
+  display: flex;
+  align-items: center;
+  color: var(--light-black);
+  width: 119px;
+}
+
+.tab-one .nav-content p a svg {
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.tab-one .nav-content p:hover a {
+  color: var(--deep-black);
+}
+
+.tab-one .nav-content p:hover svg {
+  background: var(--hover-color);
+}
+
+.tab-one .nav-content .isActive {
+  border-left: 5px solid var(--hover-color);
+}
+
+.tab-one .nav-content .isActive a {
+  color: var(--deep-black);
+}
+
+.tab-one .nav-content .isActive a svg {
+  background: var(--hover-color);
+}
+
+.tab-two {
+  width: 85%;
+}
+
+.routes {
+  min-height: 100vh;
+}
+
+.tab-footer {
+  /* position: fixed;
+  bottom: 0; */
+}
+
+@media screen and (max-width: 1140px) {
+  .tab-one {
+    width: 30%;
+  }
+  .tab-two {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .tab-one {
+    width: 20%;
+  }
+  .tab-two {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .tab-one {
+    width: 30%;
+  }
+  .tab-two {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .tab-one {
+    width: 20%;
+  }
+  .tab-two {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tab-one {
+    width: 40%;
+  }
+  .tab-two {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .tab-one {
+    width: 30%;
+  }
+  .tab-two {
+    width: 70%;
+  }
+  .tab-one .logo h1 {
+    font-size: 28px;
+  }
+  .tab-one .nav-content p {
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+}

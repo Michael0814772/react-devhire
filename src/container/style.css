@@ -1,0 +1,41 @@
+
+.parent-footer {
+    padding: 0 50px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* position: absolute;
+    bottom: 5; */
+}
+
+.devhire {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: #8692a6;
+}
+
+.devhiretwo {
+    padding-right: 40px;
+}
+
+.devhiretwo select {
+    width: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    .parent-footer {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .devhire {
+        margin-bottom: 20px;
+    }
+}

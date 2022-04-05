@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+:root {
+  --light-black: rgba(0, 0, 0, 0.43);
+  --deep-black: #14142b;
+  --hover-color: #1d9bf0;
+  --header: #14142B;
+  --devPadding: 70px 50px 50px 50px;
+  --padding1200: 70px 0 50px 30px;
+}
