@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    overflow: hidden;
     /* position: absolute;
     bottom: 5; */
 }
@@ -20,8 +21,12 @@
   color: #8692a6;
 }
 
+.devhire p {
+    overflow: hidden;
+}
+
 .devhiretwo {
-    padding-right: 40px;
+    /* padding-right: 40px; */
 }
 
 .devhiretwo select {
@@ -29,6 +34,7 @@
     padding: 7px 0px 7px 30px;
     border-radius: 7px;
     border: 1px solid #8692A6;
+    box-sizing: border-box;
 
 }
 

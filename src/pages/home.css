@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   color: var(--light-black);
-  width: 119px;
+  width: 140px;
 }
 
 .tab-one .nav-content p a svg {
@@ -78,6 +78,7 @@
 }
 
 .tab-footer {
+  width: 100%;
   /* position: fixed;
   bottom: 0; */
 }

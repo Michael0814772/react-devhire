@@ -15,6 +15,7 @@
   line-height: 34px;
   letter-spacing: 1px;
   color: #14142b;
+  overflow: hidden;
 }
 
 .content {

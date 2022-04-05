@@ -26,7 +26,7 @@ const Home = () => {
         <div className="nav-content">
           <p className={`${path === "/" && "isActive"}`} onClick={refresh}>
             <Link to="/">
-              <FiSearch className="icons" />
+              <FiSearch className="icons" size={25} />
               Home
             </Link>
           </p>
@@ -35,7 +35,7 @@ const Home = () => {
             onClick={refresh}
           >
             <Link to="/favorites">
-              <MdOutlineFavoriteBorder className="icons" />
+              <MdOutlineFavoriteBorder className="icons" size={25} />
               Favorites
             </Link>
           </p>
