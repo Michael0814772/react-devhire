@@ -7,13 +7,21 @@ const Footer = () => {
   const [countrySelected, setCountrySelected] = useState("Naira");
   console.log(data?.data?.data.currencies);
 
+  const searchSelectedCountry = data?.data?.data.currencies.find((obj) => {
+    if (obj.name === countrySelected) {
+      return true;
+    }
+    return false;
+  });
+  console.log(searchSelectedCountry);
+
   return (
     <div className="parent-footer">
       <div className="devhire">
         <p>© 2022 DevHire</p>
       </div>
       <div className="devhiretwo">
-        <form>
+        <form className="footer-form">
           <select
             value={countrySelected}
             onChange={(e) => setCountrySelected(e.target.value)}
@@ -25,6 +33,11 @@ const Footer = () => {
                 </option>
               ))}
           </select>
+          <img
+            src={searchSelectedCountry?.flag_url}
+            width="10px"
+            height="10.34px"
+          />
         </form>
       </div>
     </div>

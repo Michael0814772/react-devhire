@@ -26,6 +26,26 @@
 
 .devhiretwo select {
     width: 100px;
+    padding: 7px 0px 7px 30px;
+    border-radius: 7px;
+    border: 1px solid #8692A6;
+
+}
+
+.devhiretwo select:active {
+    border: none;
+    outline: none;
+    border: 1px solid #8692A6;
+}
+
+.footer-form {
+    position: relative;
+}
+
+.footer-form img {
+    position: absolute;
+    left: 17px;
+    top: 11px;
 }
 
 @media screen and (max-width: 600px) {
