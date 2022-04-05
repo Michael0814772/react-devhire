@@ -5,7 +5,6 @@ import useAxios from "../customAxios/useAxios";
 const Footer = () => {
   const { data } = useAxios("https://api.terawork.com/resources");
   const [countrySelected, setCountrySelected] = useState("Naira");
-  console.log(data?.data?.data.currencies);
 
   const searchSelectedCountry = data?.data?.data.currencies.find((obj) => {
     if (obj.name === countrySelected) {
@@ -13,7 +12,6 @@ const Footer = () => {
     }
     return false;
   });
-  console.log(searchSelectedCountry);
 
   return (
     <div className="parent-footer">
@@ -35,6 +33,7 @@ const Footer = () => {
           </select>
           <img
             src={searchSelectedCountry?.flag_url}
+            alt={searchSelectedCountry?.name}
             width="10px"
             height="10.34px"
           />
